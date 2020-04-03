@@ -35,7 +35,7 @@ describe('Test Component 2', () => {
   })
 
   it("Should check EventEmitter", () => {
-      let result = null;
+      let result = 0;
       testComponent.countEmitter.subscribe(v=>result = v)
 
     expect(result).toBe(0);
